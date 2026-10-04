@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fake Website Detector | Code Storm</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🛡️ Fake Website Detector
+        </div>
+
+        <div class="team-name">
+            Team Code Storm
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <h1>
+                Detect Fake & Suspicious Websites
+            </h1>
+
+            <p>
+                Protect yourself from phishing and suspicious websites
+                using our smart website detection system.
+            </p>
+
+        </section>
+
+
+        <!-- Detector -->
+        <section class="detector-box">
+
+            <h2>🔍 Check a Website</h2>
+
+            <p>
+                Enter a website URL below to analyze it.
+            </p>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="websiteURL"
+                    placeholder="https://example.com"
+                >
+
+                <button onclick="checkWebsite()">
+                    Check Website
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result -->
+        <section class="result-box">
+
+            <h2>Detection Result</h2>
+
+            <div id="result">
+
+                <p>
+                    Enter a website URL and click
+                    <b>Check Website</b>.
+                </p>
+
+            </div>
+
+
+            <!-- Security Dashboard -->
+            <div class="security-dashboard">
+
+                <div class="dashboard-header">
+
+                    <h3>🛡️ Security Dashboard</h3>
+
+                    <span id="securityStatus">
+                        Waiting
+                    </span>
+
+                </div>
+
+
+                <div class="score-section">
+
+                    <div class="score-circle">
+
+                        <div id="scoreNumber">
+                            0
+                        </div>
+
+                        <span>/100</span>
+
+                    </div>
+
+
+                    <div class="score-info">
+
+                        <h3 id="riskLevel">
+                            Not Analyzed
+                        </h3>
+
+                        <p id="riskMessage">
+                            Enter a website to start security analysis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="risk-bar">
+
+                    <div id="riskFill"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Security Reasons -->
+            <div id="reasons"></div>
+
+
+            <!-- Domain Information -->
+            <div id="domainInfo"></div>
+
+        </section>
+
+
+        <!-- Mandana AI -->
+<section class="mandana-box">
+
+    <h2>🤖 Mandana AI Reasoning</h2>
+
+    <p>
+        Use Mandana AI to examine both sides of the security decision
+        before taking action.
+    </p>
+
+    <textarea
+        id="mandanaPrompt"
+        placeholder="Analyze a website first to generate a Mandana AI prompt..."
+        readonly
+    ></textarea>
+
+    <div class="mandana-buttons">
+
+        <button onclick="copyMandanaPrompt()">
+            📋 Copy for Mandana AI
+        </button>
+
+        <a
+            href="https://www.kriyagniai.com/auth/sign-in"
+            target="_blank"
+            class="mandana-open"
+        >
+            🧠 Open Mandana AI
+        </a>
+
+    </div>
+
+    <p id="mandanaStatus"></p>
+
+</section>
+<!-- Mandana AI Result -->
+<div class="mandana-result-box">
+
+    <h3>🧠 Mandana AI Analysis</h3>
+
+    <textarea
+        id="mandanaResponseInput"
+        placeholder="Paste the Mandana AI response here..."
+    ></textarea>
+
+    <button onclick="showMandanaResponse()">
+        ✅ Show AI Analysis
+    </button>
+
+    <pre id="mandanaResponse"></pre>
+
+</div>
+            <h2>Our Features</h2>
+
+            <div class="feature-container">
+
+                <div class="feature-card">
+
+                    <h3>🔗 URL Analysis</h3>
+
+                    <p>
+                        Analyze the structure of the entered website URL.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>⚠️ Risk Detection</h3>
+
+                    <p>
+                        Identify suspicious patterns and calculate
+                        a risk score.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>🤖 AI Assistance</h3>
+
+                    <p>
+                        Provide an easy-to-understand explanation
+                        of potential risks.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Fake Website Detector</h3>
+
+        <p>
+            Developed by <b>Team Code Storm</b>
+        </p>
+
+        <p>
+            Team Leader: <b>Deepak Kumar</b>
+        </p>
+
+        <p>
+            Think Beyond 2026 Hackathon | 4 Members
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
